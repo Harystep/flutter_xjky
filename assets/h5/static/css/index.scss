@@ -1,0 +1,637 @@
+/* 水平居中 */
+.middle-x {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 垂直居中 */
+.middle-y {
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+}
+
+/* 水平垂直居中 */
+.middle-xy {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// 判断iphoneX 将 footerBox 的 padding-bottom 填充到最底部
+// @supports (bottom: env(safe-area-inset-bottom)) {
+
+//   body,
+//   .footer {
+//     // box-sizing: border-box;
+//     padding-bottom: constant(safe-area-inset-bottom);
+//     padding-bottom: env(safe-area-inset-bottom);
+//   }
+// }
+
+// 层罩层
+.van-overlay {
+  background-color: rgba(0, 0, 0, .2);
+}
+
+
+
+// banner
+.swipeContainer {
+  .van-swipe__indicator {
+    width: 0.09rem;
+    height: 0.09rem;
+    background: #FFF8FA;
+    // border-radius: 0.09rem;
+  }
+
+  .van-swipe__indicator--active {
+    width: 0.25rem;
+    background: #fff;
+  }
+
+  .van-swipe-item {
+    img {
+      width: 7rem;
+      height: 2.8rem;
+      border-radius: .24rem;
+    }
+  }
+}
+// .swiper-pagination-bullet {
+//   width: 0.09rem;
+//   height: 0.09rem;
+//   border-radius: 0.09rem;
+//   background: #fff;
+//   opacity: .8;
+// }
+
+// .swiper-pagination-bullet-active {
+//   width: 0.25rem;
+//   height: 0.09rem;
+//   background: #fff;
+//   opacity: 1;
+// }
+// 列表导航列表
+.listTabBox {
+  margin-top: 0.36rem;
+  display: flex;
+  align-items: center;
+
+  .listTabList {
+    width: 16.66%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title {
+      font-size: 0.28rem;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 1);
+      opacity: 0.8;
+      margin-bottom: 0.1rem;
+    }
+
+    span {
+      width: 0.39rem;
+      height: 0.07rem;
+      border-radius: 0.07rem;
+      background: transparent;
+    }
+  }
+
+  .active {
+    .title {
+      font-size: 0.3rem;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+      opacity: 1;
+    }
+
+    span {
+      background: #fff;
+    }
+  }
+}
+
+// 商品
+.goodTemplateBox {
+  padding-left: .2rem;
+  margin-top: .3rem;
+
+  .goodTemplateList {
+    width: 7.1rem;
+    min-height: 2.2rem;
+    border-radius: 0.2rem;
+    background: #FFFFFF;
+    display: flex;
+    padding: .3rem 0;
+    margin-bottom: .25rem;
+    position: relative;
+    flex-wrap: wrap;
+
+
+    // 订单信息
+    .orderDetail {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border-bottom: 0.015rem solid #F7F7F7;
+      margin-bottom: .25rem;
+      padding: 0 .31rem 0.28rem .3rem;
+
+      .orderCode {
+        font-size: 0.24rem;
+        font-weight: 400;
+        color: #999999;
+      }
+
+      .status {
+        font-size: 0.24rem;
+        font-weight: 400;
+        color: #FE7C7D;
+      }
+    }
+
+    .goodList {
+      display: flex;
+      padding: 0 .28rem;
+      width: 100%;
+      margin-bottom: .4rem;
+    }
+
+    .goodList:last-child {
+      margin-bottom: 0;
+    }
+
+    // 物流信息
+    .logistics {
+      width: 100%;
+      padding: 0.4rem .29rem 0 .32rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .logisticsMsg {
+        font-size: 0.24rem;
+        font-weight: 400;
+        color: #999999;
+        display: flex;
+        align-items: center;
+
+        span {
+          padding: 0.02rem 0.05rem;
+          border-radius: .32rem;
+          border: 0.015rem solid #3785F5;
+          font-size: 0.2rem;
+          font-weight: 400;
+          color: #0063F2;
+          margin-left: .12rem;
+        }
+      }
+
+      .logisticsButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.02rem;
+        height: .72rem;
+        border-radius: .72rem;
+        background: #FE7C7D;
+        font-size: 0.3rem;
+        font-weight: 400;
+        color: #FFFFFF;
+      }
+    }
+
+    // 判读是否选中
+    .choose {
+      width: 0.6rem;
+      height: 1.6rem;
+      line-height: 1.6rem;
+
+      img {
+        width: 0.34rem;
+        height: 0.34rem;
+      }
+    }
+
+    // 商品图片
+    .imgBox {
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: .2rem;
+      margin-right: .23rem;
+      // background: #ddd;
+
+      img {
+        width: 1.6rem;
+        height: 1.6rem;
+        border-radius: .2rem;
+        object-fit: cover;
+      }
+    }
+
+    // 商品信息
+    .goodMsg {
+      .name {
+        padding: 0.12rem 0 .34rem;
+        font-size: 0.28rem;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 1);
+      }
+
+      // 可兑换
+      .conversion {
+        margin-bottom: .2rem;
+        font-size: 0.24rem;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 0.35rem;
+          margin-right: 0.09rem;
+        }
+
+        span {
+          padding: 0 0.2rem 0 .19rem;
+        }
+
+        .integral {
+          font-size: 0.24rem;
+          font-weight: 400;
+          color: rgba(100, 14, 19, 1);
+        }
+      }
+
+      // 时间
+      .time {
+        font-size: 0.24rem;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+      }
+
+      // 获取方式
+      .capture {
+        font-size: 0.24rem;
+        font-family: PingFang SC;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+
+        span {
+          color: rgba(102, 102, 102, 1);
+        }
+
+        .successed {
+          color: #FE7C7D;
+        }
+      }
+
+      //单价
+      .price {
+        font-size: 0.24rem;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+        margin-bottom: .21rem;
+      }
+
+      .marginBottom {
+        margin-bottom: .21rem;
+      }
+
+      .template {
+        font-size: 0.24rem;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+        margin-bottom: .21rem;
+      }
+
+    }
+
+    // 商品数量
+    .goodNum {
+      position: absolute;
+      top: 0.3rem;
+      right: 0.28rem;
+      text-align: right;
+      font-size: 0.32rem;
+      font-weight: 500;
+      color: rgba(0, 0, 0, 1);
+    }
+  }
+}
+
+// 顶部状态
+.statusBoxTemplate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // padding: .61rem 0 .28rem;
+  padding-top: .6rem;
+  justify-content: center;
+  height: 2.5rem;
+
+  .imgBox {
+    width: 0.86rem;
+    height: 1.13rem;
+    margin-bottom: .22rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .name {
+    font-size: 0.32rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+// 信息列表
+.msgTemplateBox {
+  // margin-left: .2rem;
+  box-sizing: border-box;
+  width: 7.5rem;
+  padding: .18rem .33rem;
+  background: #fff;
+
+  .msgTemplateList {
+    line-height: .64rem;
+    font-size: 0.24rem;
+    font-weight: 400;
+    color: #999999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .label {
+      font-size: 0.24rem;
+      font-weight: 400;
+      color: #999999;
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 0.35rem;
+        height: 0.31rem;
+        margin-right: .16rem;
+      }
+
+      .num {
+        font-size: 0.3rem;
+        font-family: PingFang SC;
+        font-weight: 600;
+        color: rgba(0, 0, 0, 1);
+      }
+    }
+  }
+
+  .special {
+    color: rgba(201, 36, 36, 1);
+  }
+}
+
+// 地址列表
+.siteTemplateBox {
+  .siteTemplateList {
+    padding: .42rem .3rem .3rem;
+    width: 7.5rem;
+    min-height: 2rem;
+    background: #FFFFFF;
+    border-bottom: 0.015rem solid #EEEEEE;
+
+    .top {
+      display: flex;
+      align-items: center;
+
+      .name {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: rgba(51, 51, 51, 1);
+        margin-right: .3rem;
+      }
+
+      .phone {
+        font-size: 0.32rem;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+      }
+    }
+
+    .siteDetail {
+      // display: flex;
+      // justify-items: center;
+      margin-top: 0.2rem;
+      font-size: 0.28rem;
+      font-weight: 400;
+      color: rgba(34, 34, 34, 1);
+      line-height: 0.36rem;
+
+      span {
+        // display: inline-block;
+        vertical-align: top;
+        padding: 0.05rem 0.09rem;
+        font-size: 0.18rem;
+        line-height: .18rem;
+        margin-top: 0.03rem;
+        background: #FE7C7D;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  .siteTemplateList:last-child {
+    border-bottom: none;
+  }
+}
+
+// 底部按钮
+.footerButtonTemplate {
+  position: fixed;
+  bottom: 0.49rem;
+  left: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.91rem;
+  height: 0.91rem;
+  border-radius: 0.91rem;
+  background: #FE7C7D;
+  font-size: 0.3rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+// .van-pull-refresh__track {
+//   // position: inherit;
+//   color: #fff;
+// }
+
+// .van-pull-refresh__head {
+//   color: #fff;
+// }
+
+// .van-list__error-text,
+// .van-list__finished-text,
+// .van-list__loading .wrapper {
+//   color: #fff;
+// }
+.van-list__finished-text {
+  /* color: #fff; */
+  display: none;
+}
+
+// 筛选框
+.componentContainers {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+// 步进器
+.van-stepper {
+  border: 0.015rem solid #EEEEEE;
+  height: .59rem;
+
+  .van-stepper__minus,
+  .van-stepper__plus {
+    background: #fff;
+    width: .55rem;
+  }
+
+  .van-stepper__minus--disabled,
+  .van-stepper__plus--disabled {
+    background: #fff;
+  }
+
+  .van-stepper__input {
+    width: 1rem;
+    background: #fff;
+    margin: 0;
+    border-left: 0.015rem solid #EEEEEE;
+    border-right: 0.015rem solid #EEEEEE;
+    font-size: 0.28rem;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+  }
+}
+
+// 列表导航
+.van-tabs--line {
+  height: .9rem;
+  padding-top: 0.15rem;
+
+  .van-tabs__line {
+    width: 0.39rem !important;
+    height: 0.07rem !important;
+    border-radius: 0.07rem !important;
+    bottom: 20px;
+  }
+
+  .van-ellipsis {
+    font-size: 0.28rem;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 1);
+    opacity: 0.8;
+  }
+
+  .van-tab--active {
+    .van-ellipsis {
+      font-size: 0.3rem;
+      font-family: PingFang SC;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 1);
+      opacity: 1;
+    }
+  }
+}
+
+
+// SwitchCell 开关单元格
+.van-switch,
+.van-switch--on {
+  height: .14rem !important;
+  width: .74rem !important;
+
+
+  .van-switch__node {
+    width: .46rem !important;
+    height: .46rem !important;
+    top: -0.2rem !important;
+  }
+}
+
+.van-switch--on .van-switch__node {
+  transform: translateX(.6em) !important;
+}
+
+// 缺省图片
+.noList {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #999;
+  z-index: 0;
+  color: #000;
+  font-size: 0.3rem;
+}
+
+.noListSpecial {
+  color: #fff;
+}
+
+.loading {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 1rem;
+  }
+}
+
+.shade-model {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background: rgba($color: #000000, $alpha: 0.8); */
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 11111;
+
+}
+
+.shade-model .message {
+  position: absolute;
+  top: 1.6rem;
+  right: 2.05rem;
+  width: 3.8rem;
+  text-align: center;
+  color: #fff;
+  font-size: 0.34rem;
+  font-weight: bold;
+}
+
+.shade-model img {
+  position: absolute;
+  right: 0.43rem;
+  top: 0.18rem;
+  width: 1.41rem;
+  height: 1.53rem;
+}

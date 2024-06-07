@@ -1,0 +1,279 @@
+.index {
+  width: 100%;
+  height: 100vh;
+  background: url('http://h5.kduoo.com/img/18.png') no-repeat center center #fe7c7d;
+  background-size: 100%;
+  padding: 1.3rem 0 1.7rem;
+  overflow: auto;
+}
+
+.index .scrollBox {
+  min-height: calc(100vh - 3rem);
+  overflow: auto;
+}
+
+/* //banner */
+.index .swipeContainer {
+  /* // margin-top:.8rem; */
+  padding: 0 0.25rem;
+  width: 100%;
+  height: 2.8rem;
+}
+
+/* // 菜单 */
+.menuBox {
+  width: 7rem;
+  height: 2.31rem;
+  overflow: hidden;
+  margin: 0.24rem 0 0 0.25rem;
+  border-radius: 0.25rem;
+  background: #fff;
+
+
+}
+
+.tabBox {
+  display: flex;
+  align-items: center;
+}
+
+.tabBox .tabList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+  padding-bottom: 0.23rem;
+  border-bottom: 1px solid #f5f5f5;
+
+
+}
+
+.tabBox .tabList .imgBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 1.09rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.tabBox .tabList .imgBox img {
+  width: 0.59rem;
+}
+
+.tabBox .tabList .imgBox .img2 {
+  width: 0.65rem;
+}
+
+.tabBox .tabList .imgBox .img3 {
+  width: 0.78rem;
+}
+
+.tabBox .tabList .imgBox .img4 {
+  width: 0.71rem;
+}
+
+.tabBox .tabList .imgBox .img5 {
+  width: 0.85rem;
+}
+
+.tabBox .tabList .title {
+  font-size: 0.22rem;
+  font-weight: 300;
+  color: rgba(119, 119, 119, 1);
+}
+
+/* // 通知 */
+.inform {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.inform .leftImg {
+  width: 0.33rem;
+  height: 0.32rem;
+  margin: 0 0.34rem 0 0.28rem;
+
+
+}
+
+.inform .leftImg img {
+  width: 0.33rem;
+  height: 0.32rem;
+}
+
+.inform .rightBox {
+  width: 5.5rem;
+  height: 0.83rem;
+
+
+}
+
+.inform .rightBox .text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 0.24rem;
+  font-weight: 300;
+  color: #333333;
+
+
+}
+
+.inform .rightBox .text img {
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 0.44rem;
+}
+
+.inform .rightBox .text span {
+  color: #f22757;
+}
+
+/* // 商品列表 */
+.goodBox {
+  display: flex;
+  /* // margin-top: 0.16rem; */
+  align-items: center;
+  flex-wrap: wrap;
+
+
+}
+
+.goodBox .goodList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 3.39rem;
+  height: 4.63rem;
+  background: url("http://h5.kduoo.com/img/0.png") no-repeat bottom;
+  background-size: 100%;
+  margin: 0 0.24rem;
+  padding-top: 0.3rem;
+  position: relative;
+}
+
+.goodBox .goodList .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.51rem;
+  height: 4.63rem;
+  /* // background: url("../assets/11.png") no-repeat; */
+  background-size: 100%;
+  z-index: 1;
+}
+
+.goodBox .goodList .title {
+  display: flex;
+  justify-content: center;
+  /* // align-items: center; */
+  padding-top: 0.24rem;
+  width: 2.75rem;
+  height: 0.68rem;
+  background: url("http://h5.kduoo.com/img/0-1.png") no-repeat;
+  background-size: 100%;
+  margin-bottom: 0.16rem;
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 1);
+}
+
+.goodBox .goodList .good {
+  width: 3rem;
+  height: 2.25rem;
+  border-radius: 0.24rem;
+  background: #ddd;
+  position: relative;
+
+
+}
+
+.goodBox .goodList .good .imgMain {
+  width: 3rem;
+  height: 2.25rem;
+  border-radius: 0.24rem;
+  object-fit: cover;
+}
+
+.goodBox .goodList .good .imgBg {
+  /* // width: 100%; */
+  width: 2rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.goodBox .goodList .good span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0.81rem;
+  height: 0.37rem;
+  border-radius: 0.14rem;
+  background: #f13d6f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.22rem;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 1);
+}
+
+.goodBox .goodList .good .free {
+  background: #00bc21;
+}
+
+.goodBox .goodList .text {
+  width: 3rem;
+  text-align: left;
+  padding: 0.2rem 0 0 0.21rem;
+
+
+}
+
+.goodBox .goodList .text .name {
+  font-size: 0.28rem;
+  font-weight: 500;
+  color: rgba(201, 36, 36, 1);
+  padding-bottom: 0.19rem;
+}
+
+.goodBox .goodList .text .bottom {
+  display: flex;
+  align-items: center;
+
+
+}
+
+.goodBox .goodList .text .bottom img {
+  width: 0.35rem;
+  height: 0.31rem;
+  margin-right: 0.11rem;
+}
+
+.goodBox .goodList .text .bottom div {
+  font-size: 0.28rem;
+  font-weight: 400;
+  color: rgba(201, 36, 36, 1);
+}
+
+.goodBox .goodList:nth-child(2n) {
+  margin-left: 0;
+}
+
+.goodBox .noList {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
